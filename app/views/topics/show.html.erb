@@ -18,7 +18,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <h3 class="page-header">Posts</h3>
+      <h3 class="page-header"><%=@topic.posts.count%> Posts</h3>
         <section class="post-list">
           <%@topic.posts.each do |post|%>
             <article class="row">
