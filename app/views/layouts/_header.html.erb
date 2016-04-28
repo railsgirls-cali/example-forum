@@ -16,7 +16,13 @@
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
           <li><%= link_to "Topics", topics_path %></li>
-          <li><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to "Mi cuenta", edit_user_registration_path %></li>
+          <li>
+            <%= link_to destroy_user_session_path, method: :delete do %>
+              Salir
+              <div class="glyphicon glyphicon-log-out"></div>
+            <%end%>
+          </li>
         <% else %>
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "About", about_path %></li>

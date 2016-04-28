@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :topics
+  authenticated :user do
+    root :to => "topics#index", as: :authenticated_root
+  end
   root "pages#home"
   get "about" => "pages#about"
   # The priority is based upon order of creation: first created -> highest priority.
