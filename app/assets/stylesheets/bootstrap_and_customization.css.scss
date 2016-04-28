@@ -12,6 +12,9 @@ $brand-primary:                    #e0330c;
 $jumbotron-bg:                     white;
 $btn-primary-bg:                   #D3360B;
 $btn-primary-border:               darken($btn-primary-bg, 5%);
+$btn-info-color:                   #D3360B;
+$btn-info-bg:                     white;
+$btn-info-border:                 darken($btn-primary-bg, 5%);
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
@@ -19,3 +22,16 @@ $btn-primary-border:               darken($btn-primary-bg, 5%);
   font-weight: bold;
 }
 
+.btn-auth{
+  font-size: 18px;
+  min-width: 180px;
+  font-weight: bold;
+}
+.banner{
+  margin: 40px 0 40px 0;
+}
+
+.banner-image{
+  width: 200px;
+  height: 200px;
+}
