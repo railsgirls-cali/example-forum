@@ -16,7 +16,7 @@
                     <%= topic.description%>
                 </p>
                 <p>
-                  Por: <strong>Coder Girl</strong> - <%=topic.created_at.to_date%>
+                  Por: <strong><%=topic.user.try(:email)%></strong> - <%=topic.created_at.to_date%>
                 </p>
                 <hr />
                 <div class="row rating-desc">
