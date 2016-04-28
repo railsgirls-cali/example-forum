@@ -45,4 +45,5 @@ end
 
 gem 'mongoid', '~> 5.1.0' 
 gem 'bson_ext'
+gem 'bootstrap-sass'
 

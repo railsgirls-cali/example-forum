@@ -1,0 +1,21 @@
+@import 'bootstrap';
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+$body-bg:                          #fafafa !important;
+$font-family-base:                  'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height:                    80px;
+$navbar-padding-vertical:          30px;
+$navbar-default-bg:                #d3360b;
+$navbar-default-brand-color:       white;
+$navbar-default-link-color:        white;
+$brand-primary:                    #e0330c;
+$jumbotron-bg:                     white;
+$btn-primary-bg:                   #D3360B;
+$btn-primary-border:               darken($btn-primary-bg, 5%);
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+.navbar-brand {
+  font-weight: bold;
+}
+
