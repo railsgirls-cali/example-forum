@@ -5,6 +5,7 @@ class TopicsController < ApplicationController
   # GET /topics.json
   def index
     @topics = Topic.all
+    @topic = Topic.new
   end
 
   # GET /topics/1
@@ -25,10 +26,9 @@ class TopicsController < ApplicationController
   # POST /topics.json
   def create
     @topic = Topic.new(topic_params)
-
     respond_to do |format|
       if @topic.save
-        format.html { redirect_to @topic, notice: 'Topic was successfully created.' }
+        format.html { redirect_to topics_path, notice: 'Se ha creado un nuevo Topic!' }
         format.json { render :show, status: :created, location: @topic }
       else
         format.html { render :new }

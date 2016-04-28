@@ -12,8 +12,11 @@ $jumbotron-bg:                     white;
 $btn-primary-bg:                   #D3360B;
 $btn-primary-border:               darken($btn-primary-bg, 5%);
 $btn-info-color:                   #D3360B;
-$btn-info-bg:                     white;
-$btn-info-border:                 darken($btn-primary-bg, 5%);
+$btn-info-bg:                      white;
+$btn-info-border:                  darken($btn-primary-bg, 5%);
+$alert-info-bg:                 white;
+$alert-info-border:             #D3360B;
+$alert-info-text:               #D3360B;
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
@@ -37,6 +40,7 @@ $btn-info-border:                 darken($btn-primary-bg, 5%);
 
 .well{
   display: inline-block;
+  width: 100%;
 }
 .well p{
   color: gray!important;
