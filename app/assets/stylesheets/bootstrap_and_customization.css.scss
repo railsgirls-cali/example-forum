@@ -1,8 +1,7 @@
-@import 'bootstrap';
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 $body-bg:                          #fafafa !important;
-$font-family-base:                  'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-base:                 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:                    80px;
 $navbar-padding-vertical:          30px;
 $navbar-default-bg:                #d3360b;
@@ -35,3 +34,17 @@ $btn-info-border:                 darken($btn-primary-bg, 5%);
   width: 200px;
   height: 200px;
 }
+
+.well{
+  display: inline-block;
+}
+.well p{
+  color: gray!important;
+}
+.glyphicon { margin-right:5px;}
+.section-box h2 { margin-top:0px;}
+.section-box h2 a { font-size:15px; }
+.glyphicon-heart { color:#e74c3c;}
+.glyphicon-comment { color:#27ae60;}
+.separator { padding-right:5px;padding-left:5px; }
+.section-box hr {margin-top: 0;margin-bottom: 5px;border: 0;border-top: 1px solid rgb(199, 199, 199);}

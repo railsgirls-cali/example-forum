@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>Lista de Topics</h1>
+  <p id="notice"><%= notice %></p>
+  <div class="row">
+    <div class="col-md-8">
+      <% @topics.each do |topic| %>
+        <%=link_to topic do %>
+          <div class="well">
+            <div class="col-xs-3 col-md-3 text-center">
+                <%=image_tag "image_2.png", class: "img-rounded img-responsive"%>
+            </div>
+            <div class="col-xs-9 col-md-9 section-box">
+                <h2>
+                    <%= topic.title%>
+                </h2>
+                <p>
+                    <%= topic.description%>
+                </p>
+                <p>
+                  Por: <strong>Coder Girl</strong> - <%=topic.created_at.to_date%>
+                </p>
+                <hr />
+                <div class="row rating-desc">
+                    <div class="col-md-12">
+                      <span class="glyphicon glyphicon-comment"></span>0 Posts
+                      <div class="text-right">
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <%end%>
+      <% end %>
+    </div>
+    <div class="col-md-4">
+      <%= link_to 'New Topic', new_topic_path %>
+    </div>
+  </div>
+</div>
+
+
+
+
