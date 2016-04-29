@@ -1,3 +1,4 @@
-railsgirlscali-forum-store
+# railsgirlscali-example-store
 Example application for Rails Girls Cali 2016
-Demo: http://cali-coder-girls.herokuapp.com/
+
+##Demo: http://cali-coder-girls.herokuapp.com/
